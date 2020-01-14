@@ -4,11 +4,12 @@ import time
 import csv
 from statistics import mean
 import sys
+from getpass import getpass
 
 # API Connection
-url = 'http://.....'
-username = '.....'
-password = '....'
+url = 'http://' + sys.argv[1]
+username = sys.argv[2]
+password = getpass("Password: ")
 zapi = ZabbixAPI(server=url)
 zapi.login(username, password)
 
