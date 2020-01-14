@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 from zabbix_api import ZabbixAPI
-import time
-import csv
-from statistics import mean
-import sys
 from getpass import getpass
+from statistics import mean
+import time, csv, sys
+
+
 
 # API Connection
 url = 'http://' + sys.argv[1]
